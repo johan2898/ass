@@ -1,0 +1,28 @@
+{% extends "main/header.html"%}
+
+{% block content %}
+
+    <div class="row">
+        {% for stot in stories %}
+            <div class="col s12 m6 l20">
+                <a href="{{stot.story_slug}}", style="color:#000">
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <div class="card-title">{{stot.story_title}}</div>
+                            <div  class="card-content">{{stot.story_summary}}</div>
+                            <p>{{stot.story_intro}}</p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}
+
+
+
+

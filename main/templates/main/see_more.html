@@ -1,0 +1,21 @@
+{% extends "main/header.html"%}
+
+{% block content %}
+ <div class="row">
+        {% for tell in telling %}
+            <div class="col s12 m6 l20">
+                        <div class="card-content">
+                            <div class="card-title">{{tell.title|safe}}</div>
+                            <div  class="card-content">{{tell.content|safe}}</div>
+
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+{% endblock %}
+
+
+
+
